@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Online Randevu</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic,300italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Application-Form.css">
+    <link rel="stylesheet" href="assets/css/Beautiful-Footer.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo.css">
+    <link rel="stylesheet" href="assets/css/Contact-form-simple.css">
+    <link rel="stylesheet" href="assets/css/Contact-FormModal-Contact-Form-with-Google-Map.css">
+    <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Form-Select---Full-Date---Month-Day-Year.css">
+    <link rel="stylesheet" href="assets/css/index-top-info-1.css">
+    <link rel="stylesheet" href="assets/css/index-top-info.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/TR-Form.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex flex-row align-items-center index-top-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col social-links">
+                        <div class="float-left">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col contact-information">
+                        <div class="float-right"><span><i class="fa fa-phone"></i>&nbsp;0555 555 55 55</span><span><i class="fa fa-envelope"></i>&nbsp;info@taslak.net</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+            <div class="container"><img src="assets/img/Lawyer-PNG-Image.png" style="height: 50px;"><a class="navbar-brand" href="#">Taslak olarak hazırlanmıştır!</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="/Avukat/Main/index.html">Anasayfa</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Hakkımızda </a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="/Avukat/Main/Hakkımızda.html">Hakkımızda</a><a class="dropdown-item" href="/Avukat/Main/Galeri.html">Galeri</a><a class="dropdown-item" href="/Avukat/Main/blog.html">Blog</a></div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/Avukat/Main/Avukatlarımız.html">Avukatlarımız</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Avukat/Main/CalismaAlanları.html">Çalışma Alanları</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">İletişim </a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="/Avukat/Main/İletişim.html">İletişim</a><a class="dropdown-item" href="/Avukat/Main/OnlineRandevu.html">Online Randevu</a><a class="dropdown-item" href="/Avukat/Main/Vekalet.html">Vekalet Bilgileri</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Contact Information</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="contactForm" action="javascript:void();" method="get"><input class="form-control" type="hidden" name="Introduction" value="This email was sent from www.mywebsite.com"><input class="form-control" type="hidden" name="subject" value="My Contact Form"><input class="form-control" type="hidden" name="to" value="email@mywebsite.com">
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <div id="modal-successfail"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6" id="modal-message">
+                                        <fieldset>
+                                            <legend><i class="fa fa-envelope"></i> Contact Us</legend>
+                                        </fieldset>
+                                        <div class="form-group has-feedback"><label for="modal_from_name">Name</label><input class="form-control" type="text" id="modal_from_name" tabindex="-1" name="from_name" required="" placeholder="Full Name"></div>
+                                        <div class="form-group has-feedback"><label for="modal_from_email">Email</label><input class="form-control" type="email" id="modal_from_email" name="from_email" required="" placeholder="Email Address"></div>
+                                        <div class="form-row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group has-feedback"><label for="modal_from_phone">Phone</label><input class="form-control" type="text" id="modal_from_phone" name="from_phone" placeholder="Primary Phone"></div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group"><label for="modal_calltime">Best Time to Call</label><select class="form-control" id="modal_calltime" name="Call Time">
+                                                        <option value="Morning" selected="">Morning</option>
+                                                        <option value="Afternoon">Afternoon</option>
+                                                        <option value="Evening">Evening</option>
+                                                    </select></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group"><label for="modal_comments">Comments</label><textarea class="form-control" id="modal_comments" name="Comments" placeholder="Enter comments here" rows="5"></textarea></div>
+                                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Send <i class="fa fa-chevron-circle-right"></i></button></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <fieldset>
+                                            <legend> <i class="fa fa-location-arrow"></i> Locate Us</legend>
+                                        </fieldset>
+                                        <div class="form-row">
+                                            <div class="col-md-12">
+                                                <div class="static-map"><a href="https://www.google.com/maps/place/2+15th+St+NW+Washington+DC+20024" target="_blank"><img class="img-fluid" src="http://maps.googleapis.com/maps/api/staticmap?autoscale=2&amp;size=600x210&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C582+1801+W+International+Speedway+Blvd+Daytona+Beach+FL+32114&amp;zoom=12" alt="Google Map of Washington Monument"></a></div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <fieldset>
+                                                    <legend><i class="fa fa-envelope"></i> Contact Us</legend>
+                                                </fieldset>
+                                                <div><span><strong>Name</strong></span></div>
+                                                <div><span>email@address.com</span></div>
+                                                <div><span>www.awebsite.com</span></div>
+                                                <hr>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <fieldset>
+                                                    <legend><i class="fa fa-location-arrow"></i> Our Address</legend>
+                                                </fieldset>
+                                                <div><span><strong>Office Name</strong></span></div>
+                                                <div><span>55 Icannot Dr.</span></div>
+                                                <div><span>Daytona Beach, FL 81500</span></div>
+                                                <div><abbr data-toggle="tooltip" data-placement="top" title="Office Phone: 555-867-5309">O:</abbr> 555-867-5309</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="contactForm" action="javascript:void();" method="get"><input class="form-control" type="hidden" name="Introduction" value="This email was sent from www.mywebsite.com"><input class="form-control" type="hidden" name="subject" value="My Contact Form"><input class="form-control" type="hidden" name="to" value="email@mywebsite.com">
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div id="successfail"></div>
+                    </div>
+                </div>
+                <div class="form-row d-xl-flex justify-content-xl-center">
+                    <div class="col-md-6" id="message">
+                        <fieldset>
+                            <legend class="d-xl-flex justify-content-xl-center">Online Randevu</legend>
+                        </fieldset>
+                        <div class="form-group has-feedback"><label for="from_name">İsim Soyisim</label><input class="form-control" type="text" id="from_name" tabindex="-1" name="from_name" required="" placeholder="Ad Soyad"></div>
+                        <div class="form-group has-feedback"><label for="from_email">Email</label><input class="form-control" type="email" id="from_email" name="from_email" required="" placeholder="Email Adresiniz"></div>
+                        <div class="form-row">
+                            <div class="col onlrnd">
+                                <div class="form-group has-feedback"><label for="from_phone">Telefon</label><input class="form-control" type="text" id="from_phone" name="from_phone" placeholder="Telefon Numaranız"></div>
+                                <div class="form-group has-feedback"><label for="from_phone">Randevu Tarihi</label>
+                                    <div class="form-row">
+                                        <div class="col-sm-12"><select class="form-control display-inline-block">
+                                                <option value="1" selected="">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
+                                            </select><select class="form-control display-inline-block">
+                                                <option value="1" selected="">Ocak</option>
+                                                <option value="2">Şubat</option>
+                                                <option value="3">Mart</option>
+                                                <option value="4">Nisan</option>
+                                                <option value="5">Mayıs</option>
+                                                <option value="6">Haziran</option>
+                                                <option value="7">Temmuz</option>
+                                                <option value="8">Ağustos</option>
+                                                <option value="9">Eylül</option>
+                                                <option value="10">Ekim</option>
+                                                <option value="11">Kasım</option>
+                                                <option value="12">Aralık</option>
+                                            </select><select class="form-control display-inline-block">
+                                                <option value="2016" selected="">2021</option>
+                                                <option value="2017">2022</option>
+                                            </select></div>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback"><label for="from_phone">Randevu Almak İstediğiniz Avukat</label>
+                                    <div class="form-row">
+                                        <div class="col-sm-12"><select class="form-control display-inline-block">
+                                                <option value="1" selected="">Ahmet</option>
+                                                <option value="2">Mehmet</option>
+                                                <option value="3">Ayşe</option>
+                                                <option value="4">Fatma</option>
+                                                <option value="5">Hayriye</option>
+                                                <option value="6">Onur</option>
+                                                <option value="7">Melisa</option>
+                                                <option value="8">Ali</option>
+                                                <option value="9">Veli</option>
+                                                <option value="10">Furkan</option>
+                                                <option value="11">Hüseyin</option>
+                                                <option value="12">Sami</option>
+                                            </select></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group"><label for="comments">Randevu Açıklama</label><textarea class="form-control" id="comments" name="Comments" placeholder="Ne için Randevu Almak İstediğinizi Kısaca Açıklayınız" rows="5"></textarea></div>
+                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Gönder&nbsp;<i class="fa fa-chevron-circle-right"></i></button></div>
+                        <hr>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <footer id="myFooter">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <h1 class="logo" style="margin-top:30px;"><a href="#">&nbsp;LOGO&nbsp;</a></h1>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2">
+                        <h5>Hakkımızda</h5>
+                        <ul>
+                            <li><a href="/Avukat/Main/Hakkımızda.html">Hakkımızda</a></li>
+                            <li><a href="/Avukat/Main/Galeri.html">Galeri<br></a></li>
+                            <li><a href="/Avukat/Main/blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2">
+                        <h5>Avukatlarımız</h5>
+                        <ul>
+                            <li><a href="/Avukat/Main/Avukatlarımız.html">Avukatlarımız</a></li>
+                            <li><a href="/Avukat/Main/CalismaAlanları.html">Çalışma Alanları<br></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-2">
+                        <h5>İletişim</h5>
+                        <ul>
+                            <li><a href="/Avukat/Main/İletişim.html">İletişim</a></li>
+                            <li><a href="/Avukat/Main/OnlineRandevu.html">Online Randevu<br></a></li>
+                            <li><a href="/Avukat/Main/Vekalet.html">Vekalet Bilgileri</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 social-networks">
+                        <div></div><a class="facebook" href="#"><i class="fa fa-facebook"></i></a><a class="twitter" href="#"><i class="fa fa-twitter"></i></a><a class="google" href="#"><i class="fa fa-google-plus"></i></a><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="row footer-copyright" style="background: var(--color-white);">
+                    <div class="col">
+                        <p>© 2016 Copyright Text ~ Designed By&nbsp;<a href="#">MySelf</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Application-Form-1.js"></script>
+    <script src="assets/js/Application-Form.js"></script>
+    <script src="assets/js/Contact-FormModal-Contact-Form-with-Google-Map.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">LOGO</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Anasayfa</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">Hakkımda</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#portfolio" class="navbar__links" id="portfolio-page">Projelerim</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#workwithme" class="navbar__links" id="workwithme-page">Benimle Çalış</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contact" class="button" id="signup">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">Onur Topdan</h1>
+            <p class="hero__description"><span>Frontend Developer</span></p>
+            <button class="main__btn"><a href="#about">Ben Kimim</a></button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"><img src="/Personel 2/images/profile-img.png" alt=""></div>
+            </div>
+            <div class="main__content">
+                <h1>Ben Kimim</h1>
+                <h2>Frontend Developer</h2>
+                <p>Hizmetler veya hizmetler hakkında daha fazla bilgi edinmek için bana ulaşın.</p>
+                <button class="main__btn"><a href="#contact">İletişim</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="portfolio">
+        <h1>Portfolyo</h1>
+        <div class="services__wrapper">
+            <div class="services__card">
+                <img src="/Personel 2/images/portfolio/1.png" alt="">
+                <div class="services__btn"><button><a target="_blank" href="/index.html" class="services-aa">Ön İzleme</a></button></div>
+            </div>
+            <div class="services__card">
+                <img src="/Personel 2/images/portfolio/2.png"alt="">
+                <div class="services__btn"><button><a target="_blank" href="https://nart-dogaltas.com/index.html" class="services-aa">Ön İzleme</a></button></div>
+            </div>
+            <div class="services__card">
+                <img src="/Personel 2/images/portfolio/3.png"alt="">
+                <div class="services__btn"><button><a target="_blank" href="/Avukat/Main/index.html" class="services-aa">Ön İzleme</a></button></div>
+                
+            </div>
+            <div class="services__card">
+                <img src="/Personel 2/images/portfolio/3.jpg"alt="">
+                <div class="services__btn"><button><a href="#contact" class="services-aa">Ön İzleme</a></button></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="workwithme">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>benimle çalışmak istermisiniz?</h1>
+                <h2>İletişime Geç</h2>
+                <p>Tasarımın kodlarla buluşması</p>
+                <button class="main__btn"><a href="#contact">İletişim</a></button>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card" id="card-2"><img src="/Personel 2/images/IMG_20190410_132000_705.png" alt=""></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <section class="contact-section hero sec-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>İletişim</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contact-form">
+                    <form>
+                        <div class="row">
+                            <div class="input-group">
+                                <input type="text" placeholder="Ad" class="input-control" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" placeholder="Email" class="input-control" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Konu" class="input-control" required>
+                            </div>
+                            <div class="input-group">
+                                <textarea placeholder="Mesaj" class="input-control" required></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <button class="main__btn"><a href="#">Gönder</a></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <h3>Email</h3>
+                        <p>onur37371998@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Telefon</h3>
+                        <p>+90 543 457 56 23</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Takip edin</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/onurrr37/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/1TapciN" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/onurtopdan/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/OnurTopdan" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/onur-topdan-423102213/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--item">
+                    <h2>Hakkımda</h2>
+                    <a href="#about">Ben Kimim</a>
+                    <a href="#portfolio">Portfolyo</a>
+                    <a href="#workwithme">Benimle Çalış</a>
+                    <a href="#contact">İletişim</a>
+                </div>
+                <div class="footer__link--item">
+                    <h2>Sosyal Medya</h2>
+                    <a href="/">İnstagram</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">Youtube</a>
+                    <a href="/">Twitter</a>
+                </div>
+        </div>
+            </div>
+            <section class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">LOGO</a>
+                    </div>
+                    <p class="website__rights">Onur Topdan 2020. All rights reserved</p>
+                    <div class="social__icon">
+                        <a href="https://www.facebook.com/onurrr37/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/onurtopdan/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/1TapciN" class="social__icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/OnurTopdan" class="social__icon--link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/onur-topdan-423102213/" class="social__icon--link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

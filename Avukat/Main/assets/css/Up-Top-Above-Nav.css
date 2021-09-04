@@ -1,0 +1,70 @@
+.UpTopBar {
+  width: 100%;
+  display: block;
+  min-height: 35px;
+  height: 36px;
+  background-color: #252525;
+}
+
+.UpTopBar ul li {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.UpTopBar ul li a {
+  padding: 0 3px;
+  display: block;
+  line-height: 35px;
+  font-size: 14px;
+  transition: all .3s ease-in-out;
+  color: #797979;
+}
+
+.UpTopBar ul li a:hover {
+  -ms-filter: "alpha(opacity=$value)";
+  filter: alpha(opacity=0.8);
+  -moz-opacity: .8;
+  -khtml-opacity: .8;
+  opacity: .8;
+}
+
+.UpTopBar ul.float-right li {
+  padding: 0;
+  float: left;
+  position: relative;
+}
+
+.UpTopBar ul.float-right li a {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.UpTopBar ul.float-right > li {
+  margin: 0 0 0 10px;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.UpTopBar ul.float-right li a {
+  font-size: 12px;
+  display: inline-block;
+}
+
+small {
+  color: #ffffff;
+  margin-left: 2px;
+  font-size: 12px;
+  margin-right: 2px;
+}
+
